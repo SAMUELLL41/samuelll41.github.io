@@ -191,6 +191,10 @@ body{
     text-decoration: none;
     color: rgb(0, 0, 0);
 }
+.linksp a:link{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
 a:link{
     text-decoration: none;
 }
