@@ -86,6 +86,7 @@ p{
 .obraztek{
     position: relative;
     text-align: center;
+    background-image: url(zamysleny.png);
 }
 .nadpis {
     position: absolute;
