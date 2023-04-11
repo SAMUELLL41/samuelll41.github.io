@@ -39,6 +39,10 @@ body{
 .obraztek{
     position: relative;
     text-align: center;
+    background-image: url(stastnaje.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    min-height: 710px;
 }
 .nadpis {
     position: absolute;

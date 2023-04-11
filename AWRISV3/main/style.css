@@ -35,7 +35,9 @@ body{
 }
 .cont-1{
     background-image: url(zena.png);
-    min-height: 680px;
+    min-height: 710px;
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 .nadpis-1{
     padding-right: 45%;
