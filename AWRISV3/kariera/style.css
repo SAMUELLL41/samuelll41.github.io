@@ -37,7 +37,6 @@ body{
     max-width: 100%;
 }
 .obraztek{
-    position: relative;
     text-align: center;
     background-image: url(stastnaje.png);
     background-size: 100%;
