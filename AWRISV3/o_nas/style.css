@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,600;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap');
+*{
+    margin: 0;
+}
+body{
+    font-family: "Montserrat";
+}
+.navbar{
+    display: flex;
+    min-height: 70px;
+    max-height: 70px;
+    align-items: center;
+    list-style-type: none;
+    padding-left: 25px;
+}
+.navbar img{
+    max-height: 41px;
+}
+.links ul{
+    list-style-type: none;
+}
+.links li{
+    display: inline;
+    margin-right: 25px;
+}
+.links a{
+    text-decoration: none;
+    color: rgb(5, 125, 180);
+}
+.links a:visited{
+    text-decoration: none;
+    color: rgb(5, 125, 180);
+}
+.linksp ul{
+    list-style-type: none;
+}
+.linksp li{
+    display: inline;
+    margin-right: 25px;
+    list-style-type: none;
+}
+.linkps a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    list-style-type: none;
+}
+.linksp a:visited{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.zamysleny{
+    max-width: 100%;
+}
+p{
+    font-family: 'Quicksand', sans-serif;
+    color: black;
+    font-weight: 500;
+    padding-top: 25px;
+    padding-left:50px ;
+    padding-right: 50px;
+    font-size: 25px;
+}
+.text{
+    background-color: #F0F0F0;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.paticka{
+    text-align: center;
+    min-height: 100px;
+    color: black;
+    padding-top: 50px;
+    background-color: #1f4454;
+}
+.paticka p{
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    font-weight: 500;
+    padding-top: 25px;
+    padding-left:50px ;
+    padding-right: 50px;
+    font-size: 25px;
+}
+.obraztek{
+    position: relative;
+    text-align: center;
+}
+.nadpis {
+    position: absolute;
+    top: 200px;
+    left: 16px;
+
+  }
+.nadpis p{
+    color: white;
+    font-size: 150px;
+    font-family: "Kanit", sans-serif;
+}
+a:link{
+    text-decoration: none;
+}
+a:visited{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+a:active{
+    text-decoration: none;
+}

@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,600;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap');
+*{
+    margin: 0;
+}
+body{
+    font-family: "Montserrat";
+}
+.navbar{
+    display: flex;
+    min-height: 70px;
+    max-height: 70px;
+    align-items: center;
+    list-style-type: none;
+    padding-left: 25px;
+}
+.navbar img{
+    max-height: 41px;
+}
+
+.links ul{
+    list-style-type: none;
+}
+.links li{
+    display: inline;
+    margin-right: 25px;
+}
+.links a{
+    text-decoration: none;
+    color: rgb(5, 125, 180);
+}
+.links a:visited{
+    text-decoration: none;
+    color: rgb(5, 125, 180);
+}
+.stastnaje{
+    max-width: 100%;
+}
+.obraztek{
+    position: relative;
+    text-align: center;
+}
+.nadpis {
+    position: absolute;
+    top: 250px;
+    right: 16px;
+
+  }
+.nadpis p{
+    color: white;
+    font-size: 150px;
+    font-family: "Kanit", sans-serif;
+}
+.formular{
+    padding: 25px;
+}
+input[type=text], select {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+textarea{
+    min-width: 760px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=number], select {
+    width: 15%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    background-color: #1f4454;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #265569;
+  }
+p{
+    padding-bottom: 10px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 600;
+}
+legend{
+    font-family: "Quicksand", sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+}
+.paticka{
+    text-align: center;
+    min-height: 125px;
+    color: rgb(255, 255, 255);
+    padding-top: 50px;
+    background-color: #1f4454;
+}
+.paticka p{
+    font-family: 'Quicksand', sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    padding-top: 25px;
+    padding-left:50px ;
+    padding-right: 50px;
+    font-size: 25px;
+}
+a:link{
+    text-decoration: none;
+}
+a:visited{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+a:active{
+    text-decoration: none;
+}
+.linksp ul{
+    list-style-type: none;
+}
+.linksp li{
+    display: inline;
+    margin-right: 25px;
+    list-style-type: none;
+}
+.linkps a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    list-style-type: none;
+}
+.linksp a:visited{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
