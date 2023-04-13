@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../animate/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>Awris</title>
 </head>
 <body>
@@ -23,10 +25,10 @@
     </div>
     <div class="stred">
         <div class="cont-1">
-            <p class="nadpis-1">In AWRIS we make games specialized on VR</p>
+            <p class="nadpis-1 animate__animated animate__fadeInLeft">In AWRIS we make games specialized on VR</p>
         </div>
         <div class="cont-2">
-            <div class="left">
+            <div class="left animate__animated animate__fadeInLeft animate__delay-2s">
                 <p class="nadpis3"><a href="../team/"></a> TEAM</p>
                 <p class="text3">Sme tu s Vami už od roku 1970.</p>
                 <p class="text2">Náš team pracuje na VR už mnohé roky, preto sme jedna z veľkorysých firiem ktoré sa zaoberajú s touto technológiou.</p>
@@ -76,6 +78,16 @@
             <p class="copyright">Awris © 2023</p>
         </div>
     </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+
+    <script >
+        new WOW().init();
+        function activateAnimate(){
+            new WOW().init();
+        }
+    </script>
 
 </body>
 </html>
