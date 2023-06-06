@@ -1,45 +1,108 @@
-<html>
-<head>  
-<title>SAMUELLL</title>
-<link rel="stylesheet" href="style.css">
-<script src="https://kit.fontawesome.com/e4c29b95ce.js" crossorigin="anonymous"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e4c29b95ce.js" crossorigin="anonymous"></script>
+    <title>SAMUELLL</title>
 </head>
 <body>
-    <div class="video-container">
-        <video autoplay muted loop>
-          <source src="video.mp4" type="video/mp4">
-        </video>
-      </div>
-    <div class="text-box">
-    <span>S</span>
-    <span>A</span>
-    <span>M</span>
-    <span>U</span>
-    <span>E</span>
-    <span>L</span>
-    <span>L</span>
-    <span>L</span>
-    <div class="dole"></div>
-    <p>I do stuff on internet</p>
-    <div class="odkazy">
-      <a href="https://www.youtube.com/@samuelllxd?sub_confirmation=1" 
-      target="_blank">
-      <i class="fa-brands fa-youtube"></i>
-    </a>
-      <a href="https://github.com/SAMUELLL41" 
-      target="_blank">
-      <i class="fab fa-github"></i>
-    </a>
-    <a href="../aboutme/aboutme.html">
-      <i class="fa-solid fa-user"></i>
-    </a>
-  </div>
+    <div id="loading-screen">
+        <div class="loader"></div>
     </div>
+    <div class="parent-container section">
+        <div class="image-container">
+            <a href="#aboutme" onclick="scrollToElement('aboutme')" class="round-button">
+                <span class="glow"></span> <!-- Nový element pre animáciu -->
+                &#8595;
+            </a>
+            <img src="img/prechod.png" alt="" class="prechod">
+        </div>
+    </div>
+    <div class="aboutme section" id="aboutme">
+        <div class="aboutmeleft">
+            <div class="vrch">
+                <div class="aboutmenadpis">
+                    <h1>ABOUT ME</h1>
+                </div>
+                <div class="avatarup"><img src="img/avatar.png" alt=""></div>
+            </div>
+            <div class="aboutmetext">
+                <p style="font-weight:bold;font-size: 6vw;">I'm Samuel,</p><br><p>a new front-end developer passionate about creating user-friendly interfaces. I have a solid foundation in HTML, CSS, and I started learning PHP. I'm eager to expand my skills with frameworks like React and Vue.js. My focus is on attention to detail and delivering meaningful online experiences for users. Collaborating with designers and back-end developers is something I value as it brings ideas to life. I'm excited to contribute to the ever-evolving digital landscape.</p>
+            </div>
+        </div>
+        <div class="aboutmeright">
+            <div class="avatar">
+                <img src="img/avatar.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="content-1">
+        <img src="img/prechod2.png" alt="prechod2" class="prechod2">
+        <H2 class="experience">EXPERIENCE</H1>
+        <div class="content-html">
+            <h3 class="nadpis" style="color:#d44040 ;">HTML</h3>
+            <div class="voda">
+                <p class="textik">80%</p>
+            </div>
+            <img src="img/prechod3.png" alt="" class="prechod2">
+        </div>
+        <div class="content-css">
+            <h3 class="nadpis" style="color:rgb(0, 94, 255)";>CSS</h3>
+            <div class="voda" style="filter:hue-rotate(0deg)">
+                <p class="textik">80%</p>
+            </div>
+            <img src="img/prechod4.png" alt="" class="prechod2">
+        </div>
+        <div class="content-py">
+            <h3 class="nadpis" style="color:rgb(255, 255, 0)" ;">
+                PHP
+            </h3>
+            <div class="voda" style="filter:hue-rotate(200deg) saturate(100)">
+                <p class="textik">STARTED LEARNING</p>
+            </div>
+            <img src="img/prechod5.png" alt="" class="prechod2">
+        </div>
+
+    </div>
+    <div class="content-work">
+        <a href="../my_work/my_work.html" class="work">MY WORK</a>
+    </div>
+    <div class="contact">
+        <img src="img/contact-top.png" alt="" class="prechod3">
+        <h3 class="contactmenadpis">
+            CONTACT ME
+        </h3>
+        <div class="contactcontent">
+            <div class="odkazy">
+                <a href="" class="ikonky"><i class="fa-brands fa-youtube" style="color: #000000;"></i></a>
+                <a href=""><i class="fa-brands fa-instagram" style="color: #000000;"></i></a>
+                <a href=""><i class="fa-brands fa-tiktok" style="color: #000000;"></i></a>
+                <a href=""><i class="fa-brands fa-discord" style="color: #000000;"></i></a>
+            </div>
+            <div class="mena">
+                <a href=""><p>samuelllxd</p></a>
+                <a href=""><p>samuel.cukas</p></a>
+                <a href=""><p>samuellltt</p></a>
+                <a href=""><p>SAMUELLL#1436</p></a> 
+            </div>
+        </div>
+    </div>
+    <footer>
+        <img src="img/contact-bottom.svg" alt="" class="prechod4">
+    </footer>
 
 
+
+    <script>
+        function scrollToElement(elementId) {
+          const element = document.getElementById(elementId);
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+    
+    
 </body>
 </html>
-
-
-
