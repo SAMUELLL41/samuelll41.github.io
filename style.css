@@ -295,5 +295,38 @@ footer{
 	.work{
 		width: 80vw;
 	}
+	.aboutme{
+		margin-top: 0;
+	}
+	.textik{
+		font-size: 20vw;
+	}
+	.contact{
+		height: 650px;
+	}
+}
+@media screen and (max-width:600px){
+	.mena{
+		display:none;
+	}
+	.odkazy{
+		font-size: 25vw;
+		padding-left: 0;
+	}
+	.contactcontent{
+		justify-content: center;
+		flex-wrap: wrap;
+
+	}
+	.nadpis{
+		font-size: 25vw;
+	}
+	.aboutme{
+		padding-left: 5vw;
+		margin-right: 5vw;
+	}
+	.aboutmetext{
+		font-size: 5vw;
+	}
 	
 }
