@@ -218,14 +218,14 @@ a:hover{
 }
 .work{
 	display: block;
-	width: 50vw;
-	height: 200px;
+	width: 40vw;
+	height: 175px;
 	background-color: #E23838;
 	border-radius: 100px;
 	text-align: center;
-	line-height: 200px;
+	line-height: 175px;
 	color: white;
-	font-size: 8vw;
+	font-size: 6vw;
 	text-decoration: none;
 	font-family: sans-serif;
 	margin: auto;
@@ -299,7 +299,7 @@ footer{
 		margin-top: 0;
 	}
 	.textik{
-		font-size: 20vw;
+		font-size: 18vw;
 	}
 	.contact{
 		height: 650px;
