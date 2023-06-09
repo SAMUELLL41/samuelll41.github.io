@@ -326,6 +326,9 @@ footer{
 		margin-right: 20px;
 		align-items: flex-end;
 	}
+	.aboutme-text{
+		font-size: 3vw;
+	}
 	.avatarup{
 		flex: 1;
 	}
