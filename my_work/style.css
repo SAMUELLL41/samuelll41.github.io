@@ -24,6 +24,7 @@ img{
     background-repeat: no-repeat;
     overflow: hidden;
     background-size: cover;
+    border-radius: 25px;
 }
 .work-text{
 

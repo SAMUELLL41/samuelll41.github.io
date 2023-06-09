@@ -270,10 +270,12 @@ a:hover{
 }
 .contactcontent{
 	display: flex;
-	align-items: flex-end;
+	align-items: baseline;
 	align-content: center;
-	font-size: 6vw;
+	font-size: 3vw;
 	margin-bottom: 100px;
+	flex-wrap: nowrap;
+	line-height: 4vw;
 }
 .odkazy{
 	display: flex;
@@ -293,6 +295,9 @@ footer{
 	font-size: 3vw;
 	font-weight: bold;
 	font-family: Helvetica;
+}
+.mena{
+	padding-left: 10px;
 }
 @keyframes flow{
 	0%{
@@ -316,9 +321,10 @@ footer{
 		display: flex;
 	}
 	.aboutme-header{
+		display: flex;
 		flex: 1;
 		margin-right: 20px;
-
+		align-items: flex-end;
 	}
 	.avatarup{
 		flex: 1;
@@ -347,6 +353,9 @@ footer{
 	.contact{
 		height: 650px;
 	}
+	.aboutme-text{
+		font-size: 3vw;
+	}
 }
 @media screen and (max-width:600px){
 	.mena{
@@ -371,5 +380,6 @@ footer{
 	.aboutmetext{
 		font-size: 5vw;
 	}
+
 	
 }
