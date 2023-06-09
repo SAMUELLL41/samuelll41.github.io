@@ -320,6 +320,9 @@ footer{
 		margin-right: 20px;
 
 	}
+	.aboutme-text{
+		font-size: 3vw;
+	}
 	.avatarup{
 		flex: 1;
 	}
