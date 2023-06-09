@@ -5,7 +5,6 @@ body{
 	scroll-behavior: smooth;
 	background-color: white;
 	margin: 0;
-	font-family: sans-serif;
 }
 img{
 	display:block;
@@ -110,35 +109,41 @@ a:hover{
 	max-width: 100%;
 	background-repeat: repeat;
 }
+.content-aboutme{
+	margin-top: 400px;
+	display: flex;
+	align-content: center;
+	height: 700px;
+	flex-wrap: wrap;
+}
 .aboutme{
 	display: flex;
 	height: 745px;
 	margin-top: 400px;
 	justify-content: space-between;
-	padding-left: 50px;
+	padding-left: 100px;
 	margin-right: 50px;
 	align-items: center;
 	background-color: white;
 }
-.avatar img{
-	max-width: 275px;
-	border-radius: 50% 50% 0 0;
-	box-shadow: -7px 5px 1px 7px rgba(0, 0, 0, 0.2);
-
+.avatar{
+    max-width: 400px;
+	height: auto;
+    border-radius: 35% 0 35% 0;
+    box-shadow: -7px 5px 1px 7px rgba(0, 0, 0, 0.2);
 }
-.avatarup img{
-	max-width: 5vw;
-	border-radius: 50% 50% 0 0;
-	box-shadow: -7px 5px 1px 7px rgba(0, 0, 0, 0.2);
-	margin-left: 4em;
-
+.avatarup{
+    max-width: 200px;
+	height: auto;
+    border-radius: 35% 0 35% 0;
+    box-shadow: -7px 5px 1px 7px rgba(0, 0, 0, 0.2);
 }
 .aboutmenadpis h1{
-	border-bottom: 10px solid #E23838;
-	font-size: 8vw;
-	font-family: sans-serif;
+	border-bottom: 5px solid black;
+	font-size: 6vw;
+	font-family: Helvetica;
 	padding-bottom: 15px;
-	color: #E23838;
+	color: black;
 }
 .contactmenadpis{
 	margin-left: 40px;
@@ -150,23 +155,42 @@ a:hover{
 	font-weight: bold;
 	display: inline;
 }
-.aboutmeleft{
+.aboutme-left{
+	flex: 1;
 	display: flex;
 	flex-direction: column;
-	flex: 1;
-}
-.aboutmeright{
-	display: flex;
-	flex: 1;
+	padding-left: 100px;
 	justify-content: center;
-	padding-left: 80px;
+	padding-right: 10px;
 }
-.aboutmetext{
+.responsive{
+	width: 100%;
+	max-width: 400px;
+	height: auto;
+}
+.aboutme-header{
+	border-bottom: 5px solid black;
+	font-size: 6vw;
+	font-family: Helvetica;
+	padding-bottom: 15px;
+	color: black;
+}
+.aboutme-right{
+	flex: 1;
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 100px;
+	padding-left: 10px;
+
+}
+.aboutme-text{
+	display: flex;
+	flex-direction: column;
 	padding-top: 35px;
-	font-size: 2vw;
-	color: #E23838;
-	font-family: sans-serif;
-	justify-content: space-between;
+	font-size: 1.25vw;
+	color: black;
+	font-family: Helvetica;
+	justify-content: space-evenly;
 }
 .voda{
 	height: 600px;
@@ -207,7 +231,7 @@ a:hover{
 .vrch{
 	display: flex;
 	justify-content: space-between;
-	align-items: flex-end
+	align-items: flex-end;
 }
 .exp-end{
 	color: #E23838;
@@ -241,6 +265,7 @@ a:hover{
 }
 .contact{
 	background-color: white;
+	font-family: Helvetica;
 	
 }
 .contactcontent{
@@ -263,6 +288,12 @@ a:hover{
 footer{
 	margin-left: -4px;
 }
+.samuel{
+	padding-top: 15px;
+	font-size: 3vw;
+	font-weight: bold;
+	font-family: Helvetica;
+}
 @keyframes flow{
 	0%{
 		background-position: -4000px 200px;
@@ -278,11 +309,19 @@ footer{
 	
 }
 @media screen and (max-width:850px){
-	.aboutmeright{
+	.aboutme-right{
 		display: none;
 	}
-	.avatarup img{
-		max-width: 30vw;
+	.aboutme-up{
+		display: flex;
+	}
+	.aboutme-header{
+		flex: 1;
+		margin-right: 20px;
+
+	}
+	.avatarup{
+		flex: 1;
 	}
 	.experience{
 		display: flex;
@@ -291,6 +330,10 @@ footer{
 		text-decoration: underline;
 		margin: 0;
 
+	}
+	.aboutme-left{
+		padding-left: 50px;
+		padding-right:50px;
 	}
 	.work{
 		width: 80vw;
