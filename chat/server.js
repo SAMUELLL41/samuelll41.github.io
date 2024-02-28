@@ -1,7 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const fs = require('fs');
-
+const path = require('path');
 const app = express();
 const port = 3000;
 
@@ -42,7 +42,13 @@ app.get('/get-messages', (req, res) => {
     });
 });
 
-app.use(express.static('public'));
+app.use(express.static('public', {
+    setHeaders: (res, path) => {
+      if (path.endsWith('messages.txt')) {
+        res.setHeader('Content-Type', 'text/plain');
+      }
+    },
+  }));
 
 app.listen(port, () => {
     console.log(`Server is running on http://localhost:${port}`);
