@@ -1,40 +1,33 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     loadMessages();
 });
 
 function sendMessage() {
-    const name = document.getElementById("name").value;
-    const message = document.getElementById("message").value;
+    // Your existing code...
 
-    if (name && message) {
-        const data = { name, message };
-
-        fetch('/send-message', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(data),
-        })
-        .then(response => response.json())
-        .then(result => {
-            if (result.success) {
-                loadMessages();
-                document.getElementById("message").value = "";
-            } else {
-                alert("Failed to send message.");
-            }
-        })
-        .catch(error => {
-            console.error('Error:', error);
-        });
-    } else {
-        alert("Please enter your name and message.");
-    }
+    fetch('/send-message', {  // Update the URL to match your server
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+    })
+    .then(response => response.json())
+    .then(result => {
+        if (result.success) {
+            loadMessages();
+            document.getElementById("message").value = "";
+        } else {
+            alert("Failed to send message.");
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
 }
 
 function loadMessages() {
-    fetch('/get-messages')
+    fetch('/get-messages')  // Update the URL to match your server
         .then(response => response.json())
         .then(data => {
             const messagesContainer = document.getElementById("messages");
