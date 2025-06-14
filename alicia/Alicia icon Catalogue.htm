@@ -1,0 +1,1766 @@
+<!DOCTYPE html>
+<html lang="sk"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <title>Alicia icon Catalogue</title>
+    <link rel="shortcut icon" href="http://localhost/items/Alicia.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f4ede4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: #4a3f35;
+            margin-bottom: 10px;
+        }
+        .buttons {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .buttons button {
+            padding: 10px 16px;
+            font-size: 14px;
+            background-color: #e8d5b7;
+            border: 1px solid #cbb89f;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: inset 0 -2px 0 #c2a982;
+            transition: all 0.2s ease-in-out;
+        }
+        .buttons button:hover {
+            background-color: #d8c4a6;
+            box-shadow: inset 0 -2px 0 #b89972;
+        }
+        .copycommand {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        textarea {
+            font-size: 14px;
+            padding: 10px;
+            width: 320px;
+            resize: none;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            background-color: #fffefc;
+            margin-bottom: 10px;
+        }
+        button.copybtn {
+            font-size: 14px;
+            padding: 10px 20px;
+            background-color: #a87e44;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        button.copybtn:hover {
+            background-color: #916c3a;
+        }
+        .section {
+            display: none;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 24px;
+            margin-top: 10px;
+            margin-bottom: 40px;
+        }
+        .item {
+            width: 120px;
+            background-color: #fef9f1;
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+            cursor: pointer;
+            position: relative;
+            transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+            border: 2px solid transparent;
+        }
+        .item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .item.selected {
+            border: 2px solid #28a745;
+            background-color: #fedcb4;
+        }
+        .item.selected::after {
+            content: "✔";
+            position: absolute;
+            top: 6px;
+            right: 6px;
+            background-color: #28a745;
+            color: #b89972;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            font-size: 14px;
+            line-height: 20px;
+            text-align: center;
+            box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+        }
+        .item img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .item .tid-label {
+            margin-top: 6px;
+            font-size: 13px;
+            color: #6e5b45;
+        }
+    </style>
+</head>
+<body>
+
+<h1 style="text-align: center;">Alicia Items catalogue</h1>
+<h2 style="text-align: center;">Choose an item to get the command</h2>
+<div class="copycommand">
+    <textarea id="commandArea" readonly="readonly" placeholder="//give item 1 (TID)"></textarea>
+    <button class="copybtn" onclick="copyCommand()">Copy command</button>
+</div>
+
+<div class="buttons">
+    <button onclick="showSection('girlsSection')">Girl items</button>
+    <button onclick="showSection('boysSection')">Boy items</button>
+    <button onclick="showSection('horseSection')">Horse items</button>
+</div>
+
+<div id="girlsSection" class="section" style="display: block;">
+    <h2>Girl Items</h2>
+                        <h3>Hats (cht)</h3>
+            <div class="container">
+                                    <div class="item" onclick="selectTID('10023')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cht012_00.png" alt="TID: 10023">
+                        <div class="tid-label">TID: 10023</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10024')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cht013_00.png" alt="TID: 10024">
+                        <div class="tid-label">TID: 10024</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10025')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cht016_00.png" alt="TID: 10025">
+                        <div class="tid-label">TID: 10025</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10026')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cht020_00.png" alt="TID: 10026">
+                        <div class="tid-label">TID: 10026</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10027')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cht003_00.png" alt="TID: 10027">
+                        <div class="tid-label">TID: 10027</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10050')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cht007_00.png" alt="TID: 10050">
+                        <div class="tid-label">TID: 10050</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10051')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cht015_00.png" alt="TID: 10051">
+                        <div class="tid-label">TID: 10051</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10052')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cht021_00.png" alt="TID: 10052">
+                        <div class="tid-label">TID: 10052</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10070')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cht029_00.png" alt="TID: 10070">
+                        <div class="tid-label">TID: 10070</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10073')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cht030_00.png" alt="TID: 10073">
+                        <div class="tid-label">TID: 10073</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10075')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cht031_00.png" alt="TID: 10075">
+                        <div class="tid-label">TID: 10075</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10077')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cht025_00.png" alt="TID: 10077">
+                        <div class="tid-label">TID: 10077</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10078')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cht018_00.png" alt="TID: 10078">
+                        <div class="tid-label">TID: 10078</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10079')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cht024_00.png" alt="TID: 10079">
+                        <div class="tid-label">TID: 10079</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10080')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cht036_00.png" alt="TID: 10080">
+                        <div class="tid-label">TID: 10080</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10081')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cht039_00.png" alt="TID: 10081">
+                        <div class="tid-label">TID: 10081</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10082')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cht042_00.png" alt="TID: 10082">
+                        <div class="tid-label">TID: 10082</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10083')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cht045_00.png" alt="TID: 10083">
+                        <div class="tid-label">TID: 10083</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10084')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cht044_00.png" alt="TID: 10084">
+                        <div class="tid-label">TID: 10084</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10085')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cht043_00.png" alt="TID: 10085">
+                        <div class="tid-label">TID: 10085</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10086')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cht041_00.png" alt="TID: 10086">
+                        <div class="tid-label">TID: 10086</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10087')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cht040_00.png" alt="TID: 10087">
+                        <div class="tid-label">TID: 10087</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10089')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cht038_00.png" alt="TID: 10089">
+                        <div class="tid-label">TID: 10089</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10100')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cht037_00.png" alt="TID: 10100">
+                        <div class="tid-label">TID: 10100</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10102')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cht900_00.png" alt="TID: 10102">
+                        <div class="tid-label">TID: 10102</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10104')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cht053_00.png" alt="TID: 10104">
+                        <div class="tid-label">TID: 10104</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10105')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cht052_00.png" alt="TID: 10105">
+                        <div class="tid-label">TID: 10105</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10106')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cht054_00.png" alt="TID: 10106">
+                        <div class="tid-label">TID: 10106</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10110')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cht051_00.png" alt="TID: 10110">
+                        <div class="tid-label">TID: 10110</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10111')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cht048_00.png" alt="TID: 10111">
+                        <div class="tid-label">TID: 10111</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10112')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cht047_00.png" alt="TID: 10112">
+                        <div class="tid-label">TID: 10112</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10124')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cht055_00.png" alt="TID: 10124">
+                        <div class="tid-label">TID: 10124</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10126')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cht056_00.png" alt="TID: 10126">
+                        <div class="tid-label">TID: 10126</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10128')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cht057_00.png" alt="TID: 10128">
+                        <div class="tid-label">TID: 10128</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10131')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cht058_00.png" alt="TID: 10131">
+                        <div class="tid-label">TID: 10131</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10136')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cht059_00.png" alt="TID: 10136">
+                        <div class="tid-label">TID: 10136</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10137')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cht060_00.png" alt="TID: 10137">
+                        <div class="tid-label">TID: 10137</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10140')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cht049_00.png" alt="TID: 10140">
+                        <div class="tid-label">TID: 10140</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10141')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cht062_00.png" alt="TID: 10141">
+                        <div class="tid-label">TID: 10141</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10149')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cht064_00.png" alt="TID: 10149">
+                        <div class="tid-label">TID: 10149</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10153')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cht026_00.png" alt="TID: 10153">
+                        <div class="tid-label">TID: 10153</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10155')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cht067_00.png" alt="TID: 10155">
+                        <div class="tid-label">TID: 10155</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10158')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cht061_00.png" alt="TID: 10158">
+                        <div class="tid-label">TID: 10158</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10159')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cht901_00.png" alt="TID: 10159">
+                        <div class="tid-label">TID: 10159</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10160')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cht902_00.png" alt="TID: 10160">
+                        <div class="tid-label">TID: 10160</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10163')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cht065_00.png" alt="TID: 10163">
+                        <div class="tid-label">TID: 10163</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10165')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cht903_00.png" alt="TID: 10165">
+                        <div class="tid-label">TID: 10165</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10167')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cht078_00.png" alt="TID: 10167">
+                        <div class="tid-label">TID: 10167</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10170')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cht090_00.png" alt="TID: 10170">
+                        <div class="tid-label">TID: 10170</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10171')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cht904_00.png" alt="TID: 10171">
+                        <div class="tid-label">TID: 10171</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10172')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cht070_00.png" alt="TID: 10172">
+                        <div class="tid-label">TID: 10172</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10173')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cht080_00.png" alt="TID: 10173">
+                        <div class="tid-label">TID: 10173</div>
+                    </div>
+                            </div>
+                                <h3>Dresses (cbt)</h3>
+            <div class="container">
+                                    <div class="item" onclick="selectTID('10004')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cbt008_00.png" alt="TID: 10004">
+                        <div class="tid-label">TID: 10004</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10002')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cbt001_00.png" alt="TID: 10002">
+                        <div class="tid-label">TID: 10002</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10006')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cbt011_00.png" alt="TID: 10006">
+                        <div class="tid-label">TID: 10006</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10007')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cbt012_00.png" alt="TID: 10007">
+                        <div class="tid-label">TID: 10007</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10008')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cbt013_00.png" alt="TID: 10008">
+                        <div class="tid-label">TID: 10008</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10009')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cbt014_00.png" alt="TID: 10009">
+                        <div class="tid-label">TID: 10009</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10011')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cbt002_00.png" alt="TID: 10011">
+                        <div class="tid-label">TID: 10011</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10013')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cbt003_00.png" alt="TID: 10013">
+                        <div class="tid-label">TID: 10013</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10015')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cbt005_00.png" alt="TID: 10015">
+                        <div class="tid-label">TID: 10015</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10017')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cbt007_00.png" alt="TID: 10017">
+                        <div class="tid-label">TID: 10017</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10019')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cbt009_00.png" alt="TID: 10019">
+                        <div class="tid-label">TID: 10019</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10021')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cbt010_00.png" alt="TID: 10021">
+                        <div class="tid-label">TID: 10021</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10028')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cbt015_00.png" alt="TID: 10028">
+                        <div class="tid-label">TID: 10028</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10029')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cbt016_00.png" alt="TID: 10029">
+                        <div class="tid-label">TID: 10029</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10031')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cbt017_00.png" alt="TID: 10031">
+                        <div class="tid-label">TID: 10031</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10032')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cbt018_00.png" alt="TID: 10032">
+                        <div class="tid-label">TID: 10032</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10033')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cbt019_00.png" alt="TID: 10033">
+                        <div class="tid-label">TID: 10033</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10035')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cbt020_00.png" alt="TID: 10035">
+                        <div class="tid-label">TID: 10035</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10038')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cbt021_00.png" alt="TID: 10038">
+                        <div class="tid-label">TID: 10038</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10039')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cbt022_00.png" alt="TID: 10039">
+                        <div class="tid-label">TID: 10039</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10055')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cbt001_00.png" alt="TID: 10055">
+                        <div class="tid-label">TID: 10055</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10057')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cbt001_00.png" alt="TID: 10057">
+                        <div class="tid-label">TID: 10057</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10059')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cbt023_00.png" alt="TID: 10059">
+                        <div class="tid-label">TID: 10059</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10060')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cbt024_00.png" alt="TID: 10060">
+                        <div class="tid-label">TID: 10060</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10061')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cbt025_00.png" alt="TID: 10061">
+                        <div class="tid-label">TID: 10061</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10062')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cbt027_00.png" alt="TID: 10062">
+                        <div class="tid-label">TID: 10062</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10063')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cbt028_00.png" alt="TID: 10063">
+                        <div class="tid-label">TID: 10063</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10067')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cbt026_00.png" alt="TID: 10067">
+                        <div class="tid-label">TID: 10067</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10069')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cbt004_00.png" alt="TID: 10069">
+                        <div class="tid-label">TID: 10069</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10071')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cbt029_00.png" alt="TID: 10071">
+                        <div class="tid-label">TID: 10071</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10074')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cbt030_00.png" alt="TID: 10074">
+                        <div class="tid-label">TID: 10074</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10076')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cbt031_00.png" alt="TID: 10076">
+                        <div class="tid-label">TID: 10076</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10090')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cbt036_00.png" alt="TID: 10090">
+                        <div class="tid-label">TID: 10090</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10092')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cbt038_00.png" alt="TID: 10092">
+                        <div class="tid-label">TID: 10092</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10093')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cbt041_00.png" alt="TID: 10093">
+                        <div class="tid-label">TID: 10093</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10094')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cbt042_00.png" alt="TID: 10094">
+                        <div class="tid-label">TID: 10094</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10095')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cbt043_00.png" alt="TID: 10095">
+                        <div class="tid-label">TID: 10095</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10096')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cbt044_00.png" alt="TID: 10096">
+                        <div class="tid-label">TID: 10096</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10097')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cbt045_00.png" alt="TID: 10097">
+                        <div class="tid-label">TID: 10097</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10098')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cbt039_00.png" alt="TID: 10098">
+                        <div class="tid-label">TID: 10098</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10099')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cbt040_00.png" alt="TID: 10099">
+                        <div class="tid-label">TID: 10099</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10101')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cbt037_00.png" alt="TID: 10101">
+                        <div class="tid-label">TID: 10101</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10103')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cbt001_00.png" alt="TID: 10103">
+                        <div class="tid-label">TID: 10103</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10107')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cbt053_00.png" alt="TID: 10107">
+                        <div class="tid-label">TID: 10107</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10108')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cbt052_00.png" alt="TID: 10108">
+                        <div class="tid-label">TID: 10108</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10109')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cbt054_00.png" alt="TID: 10109">
+                        <div class="tid-label">TID: 10109</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10113')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cbt048_00.png" alt="TID: 10113">
+                        <div class="tid-label">TID: 10113</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10114')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cbt051_00.png" alt="TID: 10114">
+                        <div class="tid-label">TID: 10114</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10115')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cbt047_00.png" alt="TID: 10115">
+                        <div class="tid-label">TID: 10115</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10116')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cbt050_00.png" alt="TID: 10116">
+                        <div class="tid-label">TID: 10116</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10123')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cbt046_00.png" alt="TID: 10123">
+                        <div class="tid-label">TID: 10123</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10125')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cbt055_00.png" alt="TID: 10125">
+                        <div class="tid-label">TID: 10125</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10127')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cbt056_00.png" alt="TID: 10127">
+                        <div class="tid-label">TID: 10127</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10129')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cbt057_00.png" alt="TID: 10129">
+                        <div class="tid-label">TID: 10129</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10132')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cbt058_00.png" alt="TID: 10132">
+                        <div class="tid-label">TID: 10132</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10138')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cbt059_00.png" alt="TID: 10138">
+                        <div class="tid-label">TID: 10138</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10139')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cbt060_00.png" alt="TID: 10139">
+                        <div class="tid-label">TID: 10139</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10142')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cbt049_00.png" alt="TID: 10142">
+                        <div class="tid-label">TID: 10142</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10143')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cbt004_00.png" alt="TID: 10143">
+                        <div class="tid-label">TID: 10143</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10144')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cbt062_00.png" alt="TID: 10144">
+                        <div class="tid-label">TID: 10144</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10146')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cbt028_00.png" alt="TID: 10146">
+                        <div class="tid-label">TID: 10146</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10147')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cbt032_00.png" alt="TID: 10147">
+                        <div class="tid-label">TID: 10147</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10148')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cbt033_00.png" alt="TID: 10148">
+                        <div class="tid-label">TID: 10148</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10150')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cbt064_00.png" alt="TID: 10150">
+                        <div class="tid-label">TID: 10150</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10154')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cbt026_00.png" alt="TID: 10154">
+                        <div class="tid-label">TID: 10154</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10156')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cbt067_00.png" alt="TID: 10156">
+                        <div class="tid-label">TID: 10156</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10157')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cbt061_00.png" alt="TID: 10157">
+                        <div class="tid-label">TID: 10157</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10164')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cbt065_00.png" alt="TID: 10164">
+                        <div class="tid-label">TID: 10164</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10168')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cbt090_00.png" alt="TID: 10168">
+                        <div class="tid-label">TID: 10168</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10166')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cbt078_00.png" alt="TID: 10166">
+                        <div class="tid-label">TID: 10166</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10174')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cbt023_00.png" alt="TID: 10174">
+                        <div class="tid-label">TID: 10174</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10175')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cbt070_00.png" alt="TID: 10175">
+                        <div class="tid-label">TID: 10175</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10176')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cbt080_00.png" alt="TID: 10176">
+                        <div class="tid-label">TID: 10176</div>
+                    </div>
+                            </div>
+                                <h3>Legs (cpt)</h3>
+            <div class="container">
+                                    <div class="item" onclick="selectTID('10003')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cpt001_00.png" alt="TID: 10003">
+                        <div class="tid-label">TID: 10003</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10012')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cpt002_00.png" alt="TID: 10012">
+                        <div class="tid-label">TID: 10012</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10014')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cpt003_00.png" alt="TID: 10014">
+                        <div class="tid-label">TID: 10014</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10016')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cpt005_00.png" alt="TID: 10016">
+                        <div class="tid-label">TID: 10016</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10018')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cpt007_00.png" alt="TID: 10018">
+                        <div class="tid-label">TID: 10018</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10020')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cpt009_00.png" alt="TID: 10020">
+                        <div class="tid-label">TID: 10020</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10022')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cpt010_00.png" alt="TID: 10022">
+                        <div class="tid-label">TID: 10022</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10034')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cpt019_00.png" alt="TID: 10034">
+                        <div class="tid-label">TID: 10034</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10036')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cpt020_00.png" alt="TID: 10036">
+                        <div class="tid-label">TID: 10036</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10053')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cpt022_00.png" alt="TID: 10053">
+                        <div class="tid-label">TID: 10053</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10056')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cpt001_00.png" alt="TID: 10056">
+                        <div class="tid-label">TID: 10056</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10058')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cpt001_00.png" alt="TID: 10058">
+                        <div class="tid-label">TID: 10058</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10064')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cpt023_00.png" alt="TID: 10064">
+                        <div class="tid-label">TID: 10064</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10066')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cpt025_00.png" alt="TID: 10066">
+                        <div class="tid-label">TID: 10066</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10117')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cpt048_00.png" alt="TID: 10117">
+                        <div class="tid-label">TID: 10117</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10130')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cpt057_00.png" alt="TID: 10130">
+                        <div class="tid-label">TID: 10130</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10145')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cpt062_00.png" alt="TID: 10145">
+                        <div class="tid-label">TID: 10145</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10169')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cpt090_00.png" alt="TID: 10169">
+                        <div class="tid-label">TID: 10169</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10177')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cpt023_00.png" alt="TID: 10177">
+                        <div class="tid-label">TID: 10177</div>
+                    </div>
+                            </div>
+                                <h3>Hairs (cha)</h3>
+            <div class="container">
+                                    <div class="item" onclick="selectTID('10005')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cha002_00.png" alt="TID: 10005">
+                        <div class="tid-label">TID: 10005</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10040')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cha001_00.png" alt="TID: 10040">
+                        <div class="tid-label">TID: 10040</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10041')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cha003_00.png" alt="TID: 10041">
+                        <div class="tid-label">TID: 10041</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10043')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cha014_00.png" alt="TID: 10043">
+                        <div class="tid-label">TID: 10043</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10044')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cha018_00.png" alt="TID: 10044">
+                        <div class="tid-label">TID: 10044</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10045')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cha019_00.png" alt="TID: 10045">
+                        <div class="tid-label">TID: 10045</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10046')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cha020_00.png" alt="TID: 10046">
+                        <div class="tid-label">TID: 10046</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10047')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cha021_00.png" alt="TID: 10047">
+                        <div class="tid-label">TID: 10047</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10048')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cha022_00.png" alt="TID: 10048">
+                        <div class="tid-label">TID: 10048</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10049')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cha023_00.png" alt="TID: 10049">
+                        <div class="tid-label">TID: 10049</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10054')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cha001_00.png" alt="TID: 10054">
+                        <div class="tid-label">TID: 10054</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10068')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cha025_00.png" alt="TID: 10068">
+                        <div class="tid-label">TID: 10068</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10122')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cha021_00.png" alt="TID: 10122">
+                        <div class="tid-label">TID: 10122</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10133')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cha026_00.png" alt="TID: 10133">
+                        <div class="tid-label">TID: 10133</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10134')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cha028_00.png" alt="TID: 10134">
+                        <div class="tid-label">TID: 10134</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10135')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cha029_00.png" alt="TID: 10135">
+                        <div class="tid-label">TID: 10135</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10161')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cha024_00.png" alt="TID: 10161">
+                        <div class="tid-label">TID: 10161</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('10162')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r00_cha030_00.png" alt="TID: 10162">
+                        <div class="tid-label">TID: 10162</div>
+                    </div>
+                            </div>
+            </div>
+
+<div id="boysSection" class="section" style="display: none;">
+    <h2>Boy Items</h2>
+                        <h3>Hats (cht)</h3>
+            <div class="container">
+                                    <div class="item" onclick="selectTID('30004')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cht010_00.png" alt="TID: 30004">
+                        <div class="tid-label">TID: 30004</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30013')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cht009_00.png" alt="TID: 30013">
+                        <div class="tid-label">TID: 30013</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30014')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cht013_00.png" alt="TID: 30014">
+                        <div class="tid-label">TID: 30014</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30023')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cht023_00.png" alt="TID: 30023">
+                        <div class="tid-label">TID: 30023</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30026')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cht007_00.png" alt="TID: 30026">
+                        <div class="tid-label">TID: 30026</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30044')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cht004_00.png" alt="TID: 30044">
+                        <div class="tid-label">TID: 30044</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30054')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cht028_00.png" alt="TID: 30054">
+                        <div class="tid-label">TID: 30054</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30057')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cht032_00.png" alt="TID: 30057">
+                        <div class="tid-label">TID: 30057</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30065')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cht025_00.png" alt="TID: 30065">
+                        <div class="tid-label">TID: 30065</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30066')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cht016_00.png" alt="TID: 30066">
+                        <div class="tid-label">TID: 30066</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30068')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cht039_00.png" alt="TID: 30068">
+                        <div class="tid-label">TID: 30068</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30069')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cht019_00.png" alt="TID: 30069">
+                        <div class="tid-label">TID: 30069</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30070')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cht036_00.png" alt="TID: 30070">
+                        <div class="tid-label">TID: 30070</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30072')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cht041_00.png" alt="TID: 30072">
+                        <div class="tid-label">TID: 30072</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30073')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cht043_00.png" alt="TID: 30073">
+                        <div class="tid-label">TID: 30073</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30075')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cht038_00.png" alt="TID: 30075">
+                        <div class="tid-label">TID: 30075</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30076')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cht018_00.png" alt="TID: 30076">
+                        <div class="tid-label">TID: 30076</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30077')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cht037_00.png" alt="TID: 30077">
+                        <div class="tid-label">TID: 30077</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30078')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cht014_00.png" alt="TID: 30078">
+                        <div class="tid-label">TID: 30078</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30079')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cht042_00.png" alt="TID: 30079">
+                        <div class="tid-label">TID: 30079</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30080')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cht040_00.png" alt="TID: 30080">
+                        <div class="tid-label">TID: 30080</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30081')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cht024_00.png" alt="TID: 30081">
+                        <div class="tid-label">TID: 30081</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30094')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cht034_00.png" alt="TID: 30094">
+                        <div class="tid-label">TID: 30094</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30096')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cht035_00.png" alt="TID: 30096">
+                        <div class="tid-label">TID: 30096</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30098')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cht035_00.png" alt="TID: 30098">
+                        <div class="tid-label">TID: 30098</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30099')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cht035_00.png" alt="TID: 30099">
+                        <div class="tid-label">TID: 30099</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30100')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cht900_00.png" alt="TID: 30100">
+                        <div class="tid-label">TID: 30100</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30101')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cht048_00.png" alt="TID: 30101">
+                        <div class="tid-label">TID: 30101</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30102')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cht046_00.png" alt="TID: 30102">
+                        <div class="tid-label">TID: 30102</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30103')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cht049_00.png" alt="TID: 30103">
+                        <div class="tid-label">TID: 30103</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30107')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cht050_00.png" alt="TID: 30107">
+                        <div class="tid-label">TID: 30107</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30108')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cht045_00.png" alt="TID: 30108">
+                        <div class="tid-label">TID: 30108</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30109')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cht030_00.png" alt="TID: 30109">
+                        <div class="tid-label">TID: 30109</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30122')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cht053_00.png" alt="TID: 30122">
+                        <div class="tid-label">TID: 30122</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30124')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cht054_00.png" alt="TID: 30124">
+                        <div class="tid-label">TID: 30124</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30127')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cht055_00.png" alt="TID: 30127">
+                        <div class="tid-label">TID: 30127</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30132')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cht056_00.png" alt="TID: 30132">
+                        <div class="tid-label">TID: 30132</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30133')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cht058_00.png" alt="TID: 30133">
+                        <div class="tid-label">TID: 30133</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30136')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cht057_00.png" alt="TID: 30136">
+                        <div class="tid-label">TID: 30136</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30137')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cht060_00.png" alt="TID: 30137">
+                        <div class="tid-label">TID: 30137</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30146')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cht061_00.png" alt="TID: 30146">
+                        <div class="tid-label">TID: 30146</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30148')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cht015_00.png" alt="TID: 30148">
+                        <div class="tid-label">TID: 30148</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30150')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cht064_00.png" alt="TID: 30150">
+                        <div class="tid-label">TID: 30150</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30153')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cht059_00.png" alt="TID: 30153">
+                        <div class="tid-label">TID: 30153</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30154')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cht901_00.png" alt="TID: 30154">
+                        <div class="tid-label">TID: 30154</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30155')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cht902_00.png" alt="TID: 30155">
+                        <div class="tid-label">TID: 30155</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30158')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cht062_00.png" alt="TID: 30158">
+                        <div class="tid-label">TID: 30158</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30160')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cht903_00.png" alt="TID: 30160">
+                        <div class="tid-label">TID: 30160</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30162')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cht078_00.png" alt="TID: 30162">
+                        <div class="tid-label">TID: 30162</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30165')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cht090_00.png" alt="TID: 30165">
+                        <div class="tid-label">TID: 30165</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30166')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cht904_00.png" alt="TID: 30166">
+                        <div class="tid-label">TID: 30166</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30167')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cht070_00.png" alt="TID: 30167">
+                        <div class="tid-label">TID: 30167</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30168')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cht080_00.png" alt="TID: 30168">
+                        <div class="tid-label">TID: 30168</div>
+                    </div>
+                            </div>
+                                <h3>Dresses (cbt)</h3>
+            <div class="container">
+                                    <div class="item" onclick="selectTID('30001')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cbt003_00.png" alt="TID: 30001">
+                        <div class="tid-label">TID: 30001</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30003')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cbt009_00.png" alt="TID: 30003">
+                        <div class="tid-label">TID: 30003</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30005')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cbt006_00.png" alt="TID: 30005">
+                        <div class="tid-label">TID: 30005</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30006')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cbt007_00.png" alt="TID: 30006">
+                        <div class="tid-label">TID: 30006</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30007')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cbt008_00.png" alt="TID: 30007">
+                        <div class="tid-label">TID: 30007</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30008')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cbt010_00.png" alt="TID: 30008">
+                        <div class="tid-label">TID: 30008</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30009')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cbt011_00.png" alt="TID: 30009">
+                        <div class="tid-label">TID: 30009</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30010')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cbt012_00.png" alt="TID: 30010">
+                        <div class="tid-label">TID: 30010</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30011')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cbt013_00.png" alt="TID: 30011">
+                        <div class="tid-label">TID: 30011</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30022')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cbt023_00.png" alt="TID: 30022">
+                        <div class="tid-label">TID: 30022</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30024')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cbt022_00.png" alt="TID: 30024">
+                        <div class="tid-label">TID: 30024</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30029')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cbt002_00.png" alt="TID: 30029">
+                        <div class="tid-label">TID: 30029</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30036')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cbt024_00.png" alt="TID: 30036">
+                        <div class="tid-label">TID: 30036</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30037')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cbt025_00.png" alt="TID: 30037">
+                        <div class="tid-label">TID: 30037</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30038')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cbt026_00.png" alt="TID: 30038">
+                        <div class="tid-label">TID: 30038</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30039')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cbt026_00.png" alt="TID: 30039">
+                        <div class="tid-label">TID: 30039</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30040')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cbt002_00.png" alt="TID: 30040">
+                        <div class="tid-label">TID: 30040</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30042')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cbt004_00.png" alt="TID: 30042">
+                        <div class="tid-label">TID: 30042</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30045')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cbt014_00.png" alt="TID: 30045">
+                        <div class="tid-label">TID: 30045</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30046')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cbt016_00.png" alt="TID: 30046">
+                        <div class="tid-label">TID: 30046</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30047')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cbt027_00.png" alt="TID: 30047">
+                        <div class="tid-label">TID: 30047</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30051')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cbt015_00.png" alt="TID: 30051">
+                        <div class="tid-label">TID: 30051</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30052')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cbt017_00.png" alt="TID: 30052">
+                        <div class="tid-label">TID: 30052</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30053')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cbt020_00.png" alt="TID: 30053">
+                        <div class="tid-label">TID: 30053</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30055')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cbt028_00.png" alt="TID: 30055">
+                        <div class="tid-label">TID: 30055</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30058')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cbt032_00.png" alt="TID: 30058">
+                        <div class="tid-label">TID: 30058</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30059')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cbt033_00.png" alt="TID: 30059">
+                        <div class="tid-label">TID: 30059</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30060')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cbt031_00.png" alt="TID: 30060">
+                        <div class="tid-label">TID: 30060</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30061')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cbt021_00.png" alt="TID: 30061">
+                        <div class="tid-label">TID: 30061</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30064')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cbt029_00.png" alt="TID: 30064">
+                        <div class="tid-label">TID: 30064</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30067')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cbt005_00.png" alt="TID: 30067">
+                        <div class="tid-label">TID: 30067</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30083')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cbt018_00.png" alt="TID: 30083">
+                        <div class="tid-label">TID: 30083</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30084')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cbt019_00.png" alt="TID: 30084">
+                        <div class="tid-label">TID: 30084</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30085')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cbt036_00.png" alt="TID: 30085">
+                        <div class="tid-label">TID: 30085</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30086')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cbt037_00.png" alt="TID: 30086">
+                        <div class="tid-label">TID: 30086</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30087')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cbt038_00.png" alt="TID: 30087">
+                        <div class="tid-label">TID: 30087</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30088')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cbt039_00.png" alt="TID: 30088">
+                        <div class="tid-label">TID: 30088</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30089')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cbt040_00.png" alt="TID: 30089">
+                        <div class="tid-label">TID: 30089</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30090')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cbt041_00.png" alt="TID: 30090">
+                        <div class="tid-label">TID: 30090</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30091')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cbt042_00.png" alt="TID: 30091">
+                        <div class="tid-label">TID: 30091</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30092')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cbt043_00.png" alt="TID: 30092">
+                        <div class="tid-label">TID: 30092</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30093')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cbt035_00.png" alt="TID: 30093">
+                        <div class="tid-label">TID: 30093</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30095')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cbt034_00.png" alt="TID: 30095">
+                        <div class="tid-label">TID: 30095</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30104')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cbt048_00.png" alt="TID: 30104">
+                        <div class="tid-label">TID: 30104</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30105')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cbt046_00.png" alt="TID: 30105">
+                        <div class="tid-label">TID: 30105</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30106')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cbt049_00.png" alt="TID: 30106">
+                        <div class="tid-label">TID: 30106</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30110')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cbt045_00.png" alt="TID: 30110">
+                        <div class="tid-label">TID: 30110</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30111')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cbt050_00.png" alt="TID: 30111">
+                        <div class="tid-label">TID: 30111</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30112')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cbt030_00.png" alt="TID: 30112">
+                        <div class="tid-label">TID: 30112</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30113')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cbt047_00.png" alt="TID: 30113">
+                        <div class="tid-label">TID: 30113</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30120')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cbt044_00.png" alt="TID: 30120">
+                        <div class="tid-label">TID: 30120</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30121')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cbt052_00.png" alt="TID: 30121">
+                        <div class="tid-label">TID: 30121</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30123')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cbt053_00.png" alt="TID: 30123">
+                        <div class="tid-label">TID: 30123</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30125')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cbt054_00.png" alt="TID: 30125">
+                        <div class="tid-label">TID: 30125</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30128')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cbt055_00.png" alt="TID: 30128">
+                        <div class="tid-label">TID: 30128</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30134')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cbt056_00.png" alt="TID: 30134">
+                        <div class="tid-label">TID: 30134</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30135')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cbt058_00.png" alt="TID: 30135">
+                        <div class="tid-label">TID: 30135</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30138')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cbt057_00.png" alt="TID: 30138">
+                        <div class="tid-label">TID: 30138</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30139')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cbt051_00.png" alt="TID: 30139">
+                        <div class="tid-label">TID: 30139</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30140')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cbt060_00.png" alt="TID: 30140">
+                        <div class="tid-label">TID: 30140</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30142')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cbt020_00.png" alt="TID: 30142">
+                        <div class="tid-label">TID: 30142</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30143')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cbt021_00.png" alt="TID: 30143">
+                        <div class="tid-label">TID: 30143</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30144')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cbt031_00.png" alt="TID: 30144">
+                        <div class="tid-label">TID: 30144</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30145')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cbt033_00.png" alt="TID: 30145">
+                        <div class="tid-label">TID: 30145</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30147')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cbt061_00.png" alt="TID: 30147">
+                        <div class="tid-label">TID: 30147</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30149')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cbt015_00.png" alt="TID: 30149">
+                        <div class="tid-label">TID: 30149</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30151')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cbt064_00.png" alt="TID: 30151">
+                        <div class="tid-label">TID: 30151</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30152')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cbt059_00.png" alt="TID: 30152">
+                        <div class="tid-label">TID: 30152</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30159')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cbt062_00.png" alt="TID: 30159">
+                        <div class="tid-label">TID: 30159</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30161')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cbt078_00.png" alt="TID: 30161">
+                        <div class="tid-label">TID: 30161</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30163')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cbt090_00.png" alt="TID: 30163">
+                        <div class="tid-label">TID: 30163</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30169')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cbt026_00.png" alt="TID: 30169">
+                        <div class="tid-label">TID: 30169</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30170')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cbt070_00.png" alt="TID: 30170">
+                        <div class="tid-label">TID: 30170</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30171')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cbt080_00.png" alt="TID: 30171">
+                        <div class="tid-label">TID: 30171</div>
+                    </div>
+                            </div>
+                                <h3>Legs (cpt)</h3>
+            <div class="container">
+                                    <div class="item" onclick="selectTID('30002')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cpt003_00.png" alt="TID: 30002">
+                        <div class="tid-label">TID: 30002</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30015')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cpt002_00.png" alt="TID: 30015">
+                        <div class="tid-label">TID: 30015</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30017')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cpt005_00.png" alt="TID: 30017">
+                        <div class="tid-label">TID: 30017</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30018')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cpt006_00.png" alt="TID: 30018">
+                        <div class="tid-label">TID: 30018</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30019')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cpt007_00.png" alt="TID: 30019">
+                        <div class="tid-label">TID: 30019</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30020')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cpt008_00.png" alt="TID: 30020">
+                        <div class="tid-label">TID: 30020</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30016')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cpt012_00.png" alt="TID: 30016">
+                        <div class="tid-label">TID: 30016</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30021')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cpt013_00.png" alt="TID: 30021">
+                        <div class="tid-label">TID: 30021</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30025')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cpt022_00.png" alt="TID: 30025">
+                        <div class="tid-label">TID: 30025</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30041')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cpt002_00.png" alt="TID: 30041">
+                        <div class="tid-label">TID: 30041</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30043')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cpt004_00.png" alt="TID: 30043">
+                        <div class="tid-label">TID: 30043</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30049')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cpt016_00.png" alt="TID: 30049">
+                        <div class="tid-label">TID: 30049</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30050')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cpt027_00.png" alt="TID: 30050">
+                        <div class="tid-label">TID: 30050</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30114')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cpt045_00.png" alt="TID: 30114">
+                        <div class="tid-label">TID: 30114</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30126')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cpt054_00.png" alt="TID: 30126">
+                        <div class="tid-label">TID: 30126</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30141')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cpt060_00.png" alt="TID: 30141">
+                        <div class="tid-label">TID: 30141</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30164')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cpt090_00.png" alt="TID: 30164">
+                        <div class="tid-label">TID: 30164</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30172')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cpt026_00.png" alt="TID: 30172">
+                        <div class="tid-label">TID: 30172</div>
+                    </div>
+                            </div>
+                                <h3>Hairs (cha)</h3>
+            <div class="container">
+                                    <div class="item" onclick="selectTID('30028')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cha001_00.png" alt="TID: 30028">
+                        <div class="tid-label">TID: 30028</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30032')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cha002_00.png" alt="TID: 30032">
+                        <div class="tid-label">TID: 30032</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30035')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cha003_00.png" alt="TID: 30035">
+                        <div class="tid-label">TID: 30035</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30030')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cha004_00.png" alt="TID: 30030">
+                        <div class="tid-label">TID: 30030</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30031')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cha005_00.png" alt="TID: 30031">
+                        <div class="tid-label">TID: 30031</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30027')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cha006_00.png" alt="TID: 30027">
+                        <div class="tid-label">TID: 30027</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30115')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cha010_00.png" alt="TID: 30115">
+                        <div class="tid-label">TID: 30115</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30116')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cha007_00.png" alt="TID: 30116">
+                        <div class="tid-label">TID: 30116</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30117')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cha008_00.png" alt="TID: 30117">
+                        <div class="tid-label">TID: 30117</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30118')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cha009_00.png" alt="TID: 30118">
+                        <div class="tid-label">TID: 30118</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30119')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cha011_00.png" alt="TID: 30119">
+                        <div class="tid-label">TID: 30119</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30129')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cha012_00.png" alt="TID: 30129">
+                        <div class="tid-label">TID: 30129</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30130')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cha015_00.png" alt="TID: 30130">
+                        <div class="tid-label">TID: 30130</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30131')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cha016_00.png" alt="TID: 30131">
+                        <div class="tid-label">TID: 30131</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30156')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cha017_00.png" alt="TID: 30156">
+                        <div class="tid-label">TID: 30156</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('30157')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_r02_cha014_00.png" alt="TID: 30157">
+                        <div class="tid-label">TID: 30157</div>
+                    </div>
+                            </div>
+            </div>
+
+<div id="horseSection" class="section" style="display: none;">
+    <h2>Horse Items</h2>
+                            <h3>Protector (haa)</h3>
+            <div class="container">
+                                    <div class="item" onclick="selectTID('20005')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_h000_haa003_00.png" alt="TID: 20005">
+                        <div class="tid-label">TID: 20005</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('20009')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_h000_haa002_00.png" alt="TID: 20009">
+                        <div class="tid-label">TID: 20009</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('20013')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_h000_haa001_00.png" alt="TID: 20013">
+                        <div class="tid-label">TID: 20013</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('20016')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_h000_haa007_00.png" alt="TID: 20016">
+                        <div class="tid-label">TID: 20016</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('20019')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_h000_haa008_00.png" alt="TID: 20019">
+                        <div class="tid-label">TID: 20019</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('20029')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_h000_haa010_00.png" alt="TID: 20029">
+                        <div class="tid-label">TID: 20029</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('20033')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_h000_haa011_00.png" alt="TID: 20033">
+                        <div class="tid-label">TID: 20033</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('20069')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_h000_haa012_00.png" alt="TID: 20069">
+                        <div class="tid-label">TID: 20069</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('20073')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_h000_haa013_00.png" alt="TID: 20073">
+                        <div class="tid-label">TID: 20073</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('20083')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_h000_haa020_00.png" alt="TID: 20083">
+                        <div class="tid-label">TID: 20083</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('20108')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_h000_haa024_00.png" alt="TID: 20108">
+                        <div class="tid-label">TID: 20108</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('20120')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_h000_haa027_00.png" alt="TID: 20120">
+                        <div class="tid-label">TID: 20120</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('20124')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_h000_haa028_00.png" alt="TID: 20124">
+                        <div class="tid-label">TID: 20124</div>
+                    </div>
+                            </div>
+                                <h3>Shield (hab)</h3>
+            <div class="container">
+                                    <div class="item" onclick="selectTID('20007')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_h000_hab003_00.png" alt="TID: 20007">
+                        <div class="tid-label">TID: 20007</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('20011')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_h000_hab002_00.png" alt="TID: 20011">
+                        <div class="tid-label">TID: 20011</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('20021')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_h000_hab008_00.png" alt="TID: 20021">
+                        <div class="tid-label">TID: 20021</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('20023')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_h000_hab001_00.png" alt="TID: 20023">
+                        <div class="tid-label">TID: 20023</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('20024')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_h000_hab007_00.png" alt="TID: 20024">
+                        <div class="tid-label">TID: 20024</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('20031')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_h000_hab010_00.png" alt="TID: 20031">
+                        <div class="tid-label">TID: 20031</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('20035')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_h000_hab011_00.png" alt="TID: 20035">
+                        <div class="tid-label">TID: 20035</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('20070')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_h000_hab012_00.png" alt="TID: 20070">
+                        <div class="tid-label">TID: 20070</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('20074')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_h000_hab013_00.png" alt="TID: 20074">
+                        <div class="tid-label">TID: 20074</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('20084')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_h000_hab020_00.png" alt="TID: 20084">
+                        <div class="tid-label">TID: 20084</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('20110')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_h000_hab024_00.png" alt="TID: 20110">
+                        <div class="tid-label">TID: 20110</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('20122')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_h000_hab027_00.png" alt="TID: 20122">
+                        <div class="tid-label">TID: 20122</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('20126')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_h000_hab028_00.png" alt="TID: 20126">
+                        <div class="tid-label">TID: 20126</div>
+                    </div>
+                            </div>
+                                <h3>Saddle (hbd)</h3>
+            <div class="container">
+                                    <div class="item" onclick="selectTID('20004')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_h000_hbd003_00.png" alt="TID: 20004">
+                        <div class="tid-label">TID: 20004</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('20008')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_h000_hbd002_00.png" alt="TID: 20008">
+                        <div class="tid-label">TID: 20008</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('20012')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_h000_hbd001_00.png" alt="TID: 20012">
+                        <div class="tid-label">TID: 20012</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('20015')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_h000_hbd007_00.png" alt="TID: 20015">
+                        <div class="tid-label">TID: 20015</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('20018')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_h000_hbd008_00.png" alt="TID: 20018">
+                        <div class="tid-label">TID: 20018</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('20022')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_h000_hbd005_00.png" alt="TID: 20022">
+                        <div class="tid-label">TID: 20022</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('20025')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_h000_hbd004_00.png" alt="TID: 20025">
+                        <div class="tid-label">TID: 20025</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('20026')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_h000_hbd006_00.png" alt="TID: 20026">
+                        <div class="tid-label">TID: 20026</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('20027')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_h000_hbd009_00.png" alt="TID: 20027">
+                        <div class="tid-label">TID: 20027</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('20028')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_h000_hbd010_00.png" alt="TID: 20028">
+                        <div class="tid-label">TID: 20028</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('20032')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_h000_hbd011_00.png" alt="TID: 20032">
+                        <div class="tid-label">TID: 20032</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('20068')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_h000_hbd012_00.png" alt="TID: 20068">
+                        <div class="tid-label">TID: 20068</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('20072')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_h000_hbd013_00.png" alt="TID: 20072">
+                        <div class="tid-label">TID: 20072</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('20076')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_h000_hbd014_00.png" alt="TID: 20076">
+                        <div class="tid-label">TID: 20076</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('20077')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_h000_hbd015_00.png" alt="TID: 20077">
+                        <div class="tid-label">TID: 20077</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('20079')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_h000_hbd017_00.png" alt="TID: 20079">
+                        <div class="tid-label">TID: 20079</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('20081')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_h000_hbd019_00.png" alt="TID: 20081">
+                        <div class="tid-label">TID: 20081</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('20082')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_h000_hbd020_00.png" alt="TID: 20082">
+                        <div class="tid-label">TID: 20082</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('20107')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_h000_hbd024_00.png" alt="TID: 20107">
+                        <div class="tid-label">TID: 20107</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('20119')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_h000_hbd027_00.png" alt="TID: 20119">
+                        <div class="tid-label">TID: 20119</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('20123')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_h000_hbd028_00.png" alt="TID: 20123">
+                        <div class="tid-label">TID: 20123</div>
+                    </div>
+                            </div>
+                                <h3>Horseshoe (hsh)</h3>
+            <div class="container">
+                                    <div class="item" onclick="selectTID('20006')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_h000_hsh003_00.png" alt="TID: 20006">
+                        <div class="tid-label">TID: 20006</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('20010')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_h000_hsh002_00.png" alt="TID: 20010">
+                        <div class="tid-label">TID: 20010</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('20014')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_h000_hsh001_00.png" alt="TID: 20014">
+                        <div class="tid-label">TID: 20014</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('20020')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_h000_hsh008_00.png" alt="TID: 20020">
+                        <div class="tid-label">TID: 20020</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('20030')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_h000_hsh010_00.png" alt="TID: 20030">
+                        <div class="tid-label">TID: 20030</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('20034')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_h000_hsh011_00.png" alt="TID: 20034">
+                        <div class="tid-label">TID: 20034</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('20071')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_h000_hsh012_00.png" alt="TID: 20071">
+                        <div class="tid-label">TID: 20071</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('20075')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_h000_hsh013_00.png" alt="TID: 20075">
+                        <div class="tid-label">TID: 20075</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('20078')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_h000_hsh015_00.png" alt="TID: 20078">
+                        <div class="tid-label">TID: 20078</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('20080')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_h000_hsh017_00.png" alt="TID: 20080">
+                        <div class="tid-label">TID: 20080</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('20085')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_h000_hsh020_00.png" alt="TID: 20085">
+                        <div class="tid-label">TID: 20085</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('20086')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_h000_hsh007_00.png" alt="TID: 20086">
+                        <div class="tid-label">TID: 20086</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('20109')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_h000_hsh024_00.png" alt="TID: 20109">
+                        <div class="tid-label">TID: 20109</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('20121')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_h000_hsh027_00.png" alt="TID: 20121">
+                        <div class="tid-label">TID: 20121</div>
+                    </div>
+                                    <div class="item" onclick="selectTID('20125')">
+                        <img src="Alicia%20icon%20Catalogue_files/icon_h000_hsh028_00.png" alt="TID: 20125">
+                        <div class="tid-label">TID: 20125</div>
+                    </div>
+                            </div>
+            </div>
+
+<script>
+function showSection(id) {
+    document.querySelectorAll('.section').forEach(s => s.style.display = 'none');
+    document.getElementById(id).style.display = 'block';
+    clearSelection();
+}
+
+function selectTID(tid) {
+    const textarea = document.getElementById('commandArea');
+    textarea.value = `//give item 1 ${tid}`;
+    highlightSelected(tid);
+}
+
+function highlightSelected(tid) {
+    document.querySelectorAll('.item').forEach(item => {
+        if (item.querySelector('.tid-label').textContent.includes(tid)) {
+            item.classList.add('selected');
+        } else {
+            item.classList.remove('selected');
+        }
+    });
+}
+
+function clearSelection() {
+    document.querySelectorAll('.item').forEach(item => item.classList.remove('selected'));
+    document.getElementById('commandArea').value = '';
+}
+
+function copyCommand() {
+    const textarea = document.getElementById('commandArea');
+    textarea.select();
+    document.execCommand('copy');
+    alert('Command copied to clipboard!');
+}
+
+showSection('girlsSection');
+</script>
+
+
+
+</body></html>
