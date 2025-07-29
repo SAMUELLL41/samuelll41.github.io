@@ -307,3 +307,12 @@ button.copybtn:hover {
     transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
     border: 2px solid transparent;
 }
+.disclaimer{
+    text-align: center;
+    padding: 30px;
+    border: 4px red solid;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color:rgba(255, 0, 0, 0.284);
+    color: black;
+    }
