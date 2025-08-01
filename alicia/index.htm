@@ -29,10 +29,10 @@
         </div>
     </div>
     <div class="content">
-        <div class="disclaimer">
+        <!--<div class="disclaimer">
             <h2><strong>DO NOT</strong> use <font color="red">red</font> items or they will break your shit</h2>
             <h3>They are here for informational purposes</h3>
-        </div>
+        </div>-->
         <div class="copycommand">
             <textarea id="commandArea" placeholder="//give item {count} {id}" readonly="readonly"></textarea>
             <button class="copybtn" onclick="copyCommand()">Copy command</button>
@@ -13402,7 +13402,7 @@ Simple is the best.&lt;/font&gt;">
             wrongids.forEach(badTid => {
                 const items = document.querySelectorAll(`.item[data-tid="${badTid}"]`);
                 items.forEach(item => {
-                    item.style.border = '2px solid red';
+                    item.style.display = 'none';
                 });
             });
         }
