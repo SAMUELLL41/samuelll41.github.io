@@ -11602,6 +11602,12 @@ Simple is the best.&lt;/font&gt;">
                 } else {
                     textarea.placeholder = '//give item {count} {id}';
                 }
+
+                if (id === 'petsSection'){
+                    document.getElementsByClassName("copycommand")[0].style.display = "none";
+                } else{
+                    document.getElementsByClassName("copycommand")[0].style.display = "flex";
+                }
             }
 
             function selectTID(tid) {
