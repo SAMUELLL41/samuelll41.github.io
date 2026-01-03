@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>samko's page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0d3d0d 0%, #1a5f1a 50%, #0f4620 100%);
+            color: #e0e0e0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .stars {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .star {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 50%;
+            animation: float 20s infinite ease-in-out;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translate(0, 0);
+                opacity: 0.3;
+            }
+
+            25% {
+                transform: translate(30px, -30px);
+                opacity: 0.8;
+            }
+
+            50% {
+                transform: translate(-20px, 40px);
+                opacity: 1;
+            }
+
+            75% {
+                transform: translate(40px, 10px);
+                opacity: 0.6;
+            }
+        }
+
+        .container {
+            text-align: center;
+            z-index: 1;
+            padding: 40px;
+            max-width: 800px;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: #4ade80;
+            margin-bottom: 20px;
+            text-shadow: 0 0 20px rgba(74, 222, 128, 0.3);
+            letter-spacing: 2px;
+        }
+
+        .subtitle {
+            font-size: 1.3rem;
+            color: #a3e635;
+            margin-bottom: 40px;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: #d1d5db;
+            margin-bottom: 30px;
+            line-height: 1.8;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+
+        .btn {
+            padding: 14px 40px;
+            font-size: 1rem;
+            font-weight: 600;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+            color: #000;
+            box-shadow: 0 4px 15px rgba(34, 197, 94, 0.4);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(34, 197, 94, 0.6);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: #4ade80;
+            border: 2px solid #4ade80;
+        }
+
+        .btn-secondary:hover {
+            background: rgba(74, 222, 128, 0.1);
+            transform: translateY(-2px);
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 60px;
+        }
+
+        .feature-card {
+            background: rgba(16, 85, 48, 0.3);
+            padding: 30px;
+            border-radius: 10px;
+            border: 1px solid rgba(74, 222, 128, 0.2);
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+        }
+
+        .feature-card:hover {
+            background: rgba(16, 85, 48, 0.5);
+            border-color: rgba(74, 222, 128, 0.5);
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .feature-card h3 {
+            color: #4ade80;
+            margin-bottom: 10px;
+            font-size: 1.3rem;
+        }
+
+        .feature-card p {
+            font-size: 0.95rem;
+            color: #b3b3b3;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 20px;
+            width: 100%;
+            text-align: center;
+            color: #6b7280;
+            font-size: 0.9rem;
+            z-index: 0;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            .subtitle {
+                font-size: 1.1rem;
+            }
+
+            .features {
+                grid-template-columns: 1fr;
+            }
+
+            .container {
+                padding: 20px;
+            }
+        }
+
+        .image {
+            border-radius: 9999px;
+            height: auto;
+            margin: auto;
+        }
+
+        .image img {
+            border-radius: 999px;
+            transition: 0.3s linear;
+        }
+
+        .image img:hover {
+
+            -webkit-box-shadow: 0px 0px 44px 19px rgba(46, 255, 77, 0.48);
+            -moz-box-shadow: 0px 0px 44px 19px rgba(46, 255, 77, 0.48);
+            box-shadow: 0px 0px 44px 19px rgba(46, 255, 77, 0.48);
+            transition: 0.3s linear;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="stars" id="stars"></div>
+
+
+    <div class="container">
+        <div class="image">
+            <img src="help.png" alt="profilovka">
+        </div>
+        <h1>samko</h1>
+        <div class="subtitle">Samuel's Portfolio</div>
+        <p>vibe coding my beloved</p>
+
+
+        <div class="cta-buttons">
+            <a href="https://discord.com/users/samuelllxd"><button class="btn btn-primary">Discord</button></a>
+            <a href="/alicia/index.htm"><button class="btn btn-secondary">Alicia Catalogue</button></a>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 samko
+    </footer>
+
+    <script>
+        // Generate random stars
+        const starsContainer = document.getElementById('stars');
+        for (let i = 0; i < 50; i++)
+        {
+            const star = document.createElement('div');
+            star.className = 'star';
+            star.style.left = Math.random() * 100 + '%';
+            star.style.top = Math.random() * 100 + '%';
+            star.style.animationDelay = Math.random() * 3 + 's';
+            starsContainer.appendChild(star);
+        }
+
+        // Button click handlers
+        document.querySelectorAll('.btn').forEach(btn =>
+        {
+            btn.addEventListener('click', function ()
+            {
+                this.style.transform = 'scale(0.95)';
+                setTimeout(() =>
+                {
+                    this.style.transform = '';
+                }, 100);
+            });
+        });
+    </script>
+</body>
+
+</html>
