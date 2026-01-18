@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: http://samko.cc/osu/sitemap.xml
