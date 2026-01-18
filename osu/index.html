@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oficiálna osu! Stránka</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div class="main">
+  <header>
+  <div class="logo"><img src="Osu-Logo.png" alt="osu! logo"></div>
+
+  <div class="burger" id="burger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <nav id="nav-menu">
+    <button class="nav-button">Home</button>
+    <button class="nav-button">Beatmaps</button>
+    <button class="nav-button">Ranking</button>
+    <button class="nav-button">Store</button>
+    <button class="nav-button">Community</button>
+    <div class="dropdown">
+      <button class="nav-button">Help ▾</button>
+      <div class="dropdown-content">
+        <a href="#uvod">Úvod</a>
+        <a href="#novinky">Novinky</a>
+        <a href="#herne-novinky">Herné Novinky</a>
+        <a href="#changelog">Changelog</a>
+        <a href="#statistiky">Štatistiky</a>
+        <a href="pravidla.html">Pravidlá</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+  <section class="hero" id="uvod">
+    <div class="video-container">
+      <video src="background.mp4" autoplay muted loop></video>
+      <div class="text-overlay">
+        <p>the bestest free-to-win rhythm game</p>
+        <a href="#" class="download-button" download>Download</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="content">
+    <div class="osu-content" id="novinky">
+      <h2>Novinky</h2>
+      <p><strong>25.05.09</strong> - Squad Global Taiko Showdown 2025: Registrácie sú otvorené!</p>
+      <p><strong>25.05.06</strong> - osu!catch World Cup 2025: Začiatok!</p>
+    </div>
+
+    <div class="osu-content" id="herne-novinky">
+      <h2>Herné Novinky</h2>
+      <p><strong>25.05.08</strong> - Nový herný mód pre osu!catch bol pridaný.</p>
+      <p><strong>25.05.05</strong> - Oprava chýb v osu!standard režime, zlepšený výkon na starších zariadeniach.</p>
+    </div>
+
+    <div class="osu-content" id="changelog">
+      <h2>Changelog</h2>
+      <p><strong>v2.1.0</strong> - Nové tlačidlá v hlavnom menu, opravy vizuálnych bugov.</p>
+      <p><strong>v2.0.8</strong> - Zlepšený výkon, opravené chyby s prekladaním textov.</p>
+    </div>
+
+    <div class="osu-content" id="statistiky">
+      <h2>Počet Hráčov Online</h2>
+      <p>Online hráči: <strong>13,282</strong></p>
+    </div>
+  </section>
+  </div>
+  <script>
+  const burger = document.getElementById('burger');
+  const navMenu = document.getElementById('nav-menu');
+
+  burger.addEventListener('click', () => {
+    burger.classList.toggle('active');
+    navMenu.classList.toggle('show');
+  });
+
+
+  document.querySelectorAll('#nav-menu .nav-button, #nav-menu .dropdown-content a').forEach(link => {
+    link.addEventListener('click', () => {
+      burger.classList.remove('active');
+      navMenu.classList.remove('show');
+    });
+  });
+</script>
+</body>
+</html>
